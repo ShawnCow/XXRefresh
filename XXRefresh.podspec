@@ -6,8 +6,8 @@ Pod::Spec.new do |s|
     s.license      = 'MIT'
     s.authors      = {'Shawn' => 'rockhxy@gmail.com'}
     s.platform     = :ios, '5.0'
-    s.source       = {:git => 'https://github.com/ShawnCow/XXRefresh', :tag => s.version}
-    s.source_files = 'XXRefresh/**/*.{h,m}'
-    s.resource     = 'XXRefresh/Resource/*.{png}'
+    s.source       = {:git => 'https://github.com/ShawnCow/XXRefresh.git', :tag => s.version}
+    s.source_files = 'XXRefresh/XXRefresh/**/*.{h,m}'
+    s.resource     = 'XXRefresh/XXRefresh/Resource/*.{png}'
     s.requires_arc = true
 end
