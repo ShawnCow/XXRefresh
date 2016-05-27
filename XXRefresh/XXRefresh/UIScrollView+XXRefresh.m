@@ -138,7 +138,6 @@ static const char * XXScrollViewFooterTapGestureKey = "XXScrollViewFooterTapGest
     headerItem.action = action;
     if (headerItem.view != refreshHeaderView) {
         self.refreshHeaderView = refreshHeaderView;
-        [headerItem.view setRefreshState:headerItem.currentState];
     }
 }
 
@@ -153,7 +152,6 @@ static const char * XXScrollViewFooterTapGestureKey = "XXScrollViewFooterTapGest
     [UIView animateWithDuration:0.25 animations:^{
         [self _xx_scrollview_setContentInset:observer.contentInsets];
     }];
-    [headerItem.view setRefreshState:XXRefreshViewStateNormal];
     if ([headerItem.view respondsToSelector:@selector(finishRefreshOnSuccess:)]) {
         [headerItem.view finishRefreshOnSuccess:success];
     }
@@ -183,7 +181,6 @@ static const char * XXScrollViewFooterTapGestureKey = "XXScrollViewFooterTapGest
     footerItem.action = action;
     if (footerItem.view != footerView) {
         self.refreshFooterView = footerView;
-        [footerItem.view setRefreshState:footerItem.currentState];
     }
 }
 
@@ -211,7 +208,6 @@ static const char * XXScrollViewFooterTapGestureKey = "XXScrollViewFooterTapGest
     [UIView animateWithDuration:0.25 animations:^{
         [self _xx_scrollview_setContentInset:observer.contentInsets];
     }];
-    [footerItem.view setRefreshState:XXRefreshViewStateNormal];
     if ([footerItem.view respondsToSelector:@selector(finishRefreshOnSuccess:)]) {
         [footerItem.view finishRefreshOnSuccess:success];
     }
@@ -322,10 +318,7 @@ static const char * XXScrollViewFooterTapGestureKey = "XXScrollViewFooterTapGest
 - (void)_xx_footerViewTapAction
 {
     _XXRefreshItem * footerItem = [[self scrollViewObserver] footerItem];
-    if (footerItem.currentState != XXRefreshViewStateLoading) {
-        footerItem.currentState = XXRefreshViewStateLoading;
-        [footerItem.view setRefreshState:XXRefreshViewStateLoading];
-        [footerItem invocationRefreshAction];
-    }
+    footerItem.currentState = XXRefreshViewStateLoading;
 }
+
 @end

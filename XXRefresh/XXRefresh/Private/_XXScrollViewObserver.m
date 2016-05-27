@@ -76,11 +76,9 @@
                 }
                 if (self.scrollView.contentOffset.y <= - (stateChangeOffset) && self.headerItem.currentState != XXRefreshViewStatePulling) {
                     self.headerItem.currentState = XXRefreshViewStatePulling;
-                    [self.headerItem.view setRefreshState:XXRefreshViewStatePulling];
                 }else if ( self.scrollView.contentOffset.y <= 0&&(self.scrollView.contentOffset.y > - (stateChangeOffset)) && self.headerItem.currentState != XXRefreshViewStateNormal)
                 {
                     self.headerItem.currentState = XXRefreshViewStateNormal;
-                    [self.headerItem.view setRefreshState:XXRefreshViewStateNormal];
                 }
                 if ([self.headerItem.view respondsToSelector:@selector(scrollViewScrollToOffset:)]) {
                     [self.headerItem.view scrollViewScrollToOffset:self.scrollView.contentOffset];
@@ -101,11 +99,9 @@
                 float bottomOffsetY = self.scrollView.contentOffset.y + self.scrollView.bounds.size.height;
                 if (bottomOffsetY > self.scrollView.contentSize.height + stateChangeOffset && self.footerItem.currentState != XXRefreshViewStatePulling) {
                     self.footerItem.currentState = XXRefreshViewStatePulling;
-                    [self.footerItem.view setRefreshState:XXRefreshViewStatePulling];
                 }else if (bottomOffsetY < self.scrollView.contentSize.height + stateChangeOffset && self.footerItem.currentState != XXRefreshViewStateNormal)
                 {
                     self.footerItem.currentState = XXRefreshViewStateNormal;
-                    [self.footerItem.view setRefreshState:XXRefreshViewStateNormal];
                 }
                 if ([self.footerItem.view respondsToSelector:@selector(scrollViewScrollToOffset:)]) {
                     [self.footerItem.view scrollViewScrollToOffset:self.scrollView.contentOffset];
@@ -117,7 +113,6 @@
         if (self.scrollView.panGestureRecognizer.state == UIGestureRecognizerStateEnded) {
             if (self.headerItem.view) {
                 if (self.headerItem.currentState == XXRefreshViewStatePulling) {
-                    self.headerItem.currentState = XXRefreshViewStateLoading;
                     float stateChangeOffset = 0;
                     if ([self.headerItem.view respondsToSelector:@selector(stateChangeOffset)]) {
                         stateChangeOffset  += self.headerItem.view.stateChangeOffset;
@@ -131,8 +126,7 @@
                         
                         [self.scrollView _xx_scrollview_setContentInset:insert];
                     }];
-                    [self.headerItem invocationRefreshAction];
-                    [self.headerItem.view setRefreshState:XXRefreshViewStateLoading];
+                    self.headerItem.currentState = XXRefreshViewStateLoading;
                 }
             }
             
@@ -153,8 +147,6 @@
                             [self.scrollView _xx_scrollview_setContentInset:insert];
                         }];
                         self.footerItem.currentState = XXRefreshViewStateLoading;
-                        [self.footerItem.view setRefreshState:XXRefreshViewStateLoading];
-                        [self.footerItem invocationRefreshAction];
                     }
                 }
             }
@@ -190,6 +182,32 @@
         IMP imp = [self.target methodForSelector:self.action];
         void(* func)(id, SEL, UIScrollView *) = (void *)imp;
         func(self.target,self.action,scrollView);
+    }
+}
+
+- (void)setCurrentState:(XXRefreshViewState)currentState
+{
+    if (_currentState == currentState) {
+        return;
+    }
+    _currentState = currentState;
+    
+    if (self.view) {
+        [self.view setRefreshState:_currentState];
+        if (_currentState == XXRefreshViewStateLoading){
+            [self invocationRefreshAction];
+        }
+    }
+}
+
+- (void)setView:(UIView<XXRefreshView> *)view
+{
+    if (_view == view) {
+        return;
+    }
+    _view = view;
+    if (_view) {
+        [_view setRefreshState:self.currentState];
     }
 }
 
