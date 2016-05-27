@@ -33,7 +33,7 @@
 - (void)_setupRefreshHeaderView
 {
     self.backgroundColor = [UIColor clearColor];
-    UIImageView * imgView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"arrow"]];
+    UIImageView * imgView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"xx_refresh_arrow"]];
     [self addSubview:imgView];
     self.arrowImageView = imgView;
     

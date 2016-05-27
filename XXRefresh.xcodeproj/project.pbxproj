@@ -17,8 +17,8 @@
 		291F03AC1CE96D0500EB297C /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 291F03AB1CE96D0500EB297C /* ScrollViewController.m */; };
 		291F03B31CE98EAC00EB297C /* _XXScrollViewObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 291F03B21CE98EAC00EB297C /* _XXScrollViewObserver.m */; };
 		29CC609A1CF3054C0095E156 /* XXRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CC60991CF3054C0095E156 /* XXRefreshHeaderView.m */; };
-		29CC61381CF54CE90095E156 /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29CC61371CF54CE90095E156 /* arrow@2x.png */; };
 		29CC61431CF590740095E156 /* XXRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CC61421CF590740095E156 /* XXRefreshFooterView.m */; };
+		29CC616C1CF7E2490095E156 /* xx_refresh_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29CC616B1CF7E2490095E156 /* xx_refresh_arrow@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,9 +41,9 @@
 		291F03B41CE98F1B00EB297C /* XXRefreshDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XXRefreshDefine.h; path = Private/XXRefreshDefine.h; sourceTree = "<group>"; };
 		29CC60981CF3054C0095E156 /* XXRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXRefreshHeaderView.h; sourceTree = "<group>"; };
 		29CC60991CF3054C0095E156 /* XXRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXRefreshHeaderView.m; sourceTree = "<group>"; };
-		29CC61371CF54CE90095E156 /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
 		29CC61411CF590740095E156 /* XXRefreshFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXRefreshFooterView.h; sourceTree = "<group>"; };
 		29CC61421CF590740095E156 /* XXRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXRefreshFooterView.m; sourceTree = "<group>"; };
+		29CC616B1CF7E2490095E156 /* xx_refresh_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xx_refresh_arrow@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,6 @@
 				291F03AA1CE96D0500EB297C /* ScrollViewController.h */,
 				291F03AB1CE96D0500EB297C /* ScrollViewController.m */,
 				291F03931CE966EF00EB297C /* Main.storyboard */,
-				29CC61371CF54CE90095E156 /* arrow@2x.png */,
 				291F03961CE966EF00EB297C /* Assets.xcassets */,
 				291F03981CE966EF00EB297C /* LaunchScreen.storyboard */,
 				291F039B1CE966EF00EB297C /* Info.plist */,
@@ -104,6 +103,7 @@
 		291F03A31CE9670F00EB297C /* XXRefresh */ = {
 			isa = PBXGroup;
 			children = (
+				29CC616A1CF7E2490095E156 /* Resource */,
 				291F03B01CE98EAC00EB297C /* Private */,
 				291F03B41CE98F1B00EB297C /* XXRefreshDefine.h */,
 				291F03A71CE9691F00EB297C /* UIScrollView+XXRefresh.h */,
@@ -123,6 +123,14 @@
 				291F03B21CE98EAC00EB297C /* _XXScrollViewObserver.m */,
 			);
 			path = Private;
+			sourceTree = "<group>";
+		};
+		29CC616A1CF7E2490095E156 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				29CC616B1CF7E2490095E156 /* xx_refresh_arrow@2x.png */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,7 +190,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29CC61381CF54CE90095E156 /* arrow@2x.png in Resources */,
+				29CC616C1CF7E2490095E156 /* xx_refresh_arrow@2x.png in Resources */,
 				291F039A1CE966EF00EB297C /* LaunchScreen.storyboard in Resources */,
 				291F03971CE966EF00EB297C /* Assets.xcassets in Resources */,
 				291F03951CE966EF00EB297C /* Main.storyboard in Resources */,
@@ -318,6 +326,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XXRefresh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shawn.refresh.XXRefresh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -329,6 +338,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XXRefresh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shawn.refresh.XXRefresh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
