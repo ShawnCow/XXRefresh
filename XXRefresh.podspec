@@ -17,8 +17,8 @@ s.platform     = :ios, '4.3'
 # s.osx.deployment_target = '10.7'
 s.requires_arc = true
 
-s.source_files = 'XXRefresh/XXRefreshDaHuang/*'
-#s.resource     = 'XXRefresh/XXRefreshDaHuang/Resource/*'
+s.source_files = 'XXRefresh/XXRefresh/*'
+#s.resource     = 'XXRefresh/XXRefresh/Resource/*'
 # s.resources = 'Assets'
 
 # s.ios.exclude_files = 'Classes/osx'
