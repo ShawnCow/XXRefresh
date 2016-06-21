@@ -25,9 +25,4 @@ s.source_files = 'XXRefresh/XXRefreshDaHuang/*'
 # s.osx.exclude_files = 'Classes/ios'
 # s.public_header_files = 'Classes/**/*.h'
 s.frameworks = 'Foundation','UIKit'
-
-
-
-
-
 end
