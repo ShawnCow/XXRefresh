@@ -26,5 +26,4 @@ s.source_files = 'XXRefresh/*'
 # s.public_header_files = 'Classes/**/*.h'
 s.frameworks = 'Foundation','UIKit'
 
-
 end
