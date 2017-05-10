@@ -1,28 +1,16 @@
 Pod::Spec.new do |s|
-s.name             = "XXRefresh"
-s.version          = "1.0.0"
-s.summary          = "简单的下拉刷新框架"
-s.description      = <<-DESC
-It is a marquee view used on iOS, which implement by Objective-C.
-DESC
-s.homepage         = "https://github.com/ShawnCow/XXRefresh"
-# s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
-s.license          = 'MIT'
-s.author             = { "Shawn" => "rockhxy@gmail.com"}
-s.source       = {:git => "https://github.com/ShawnCow/XXRefresh.git", :tag => "1.0.0"}
-# s.social_media_url = 'https://twitter.com/NAME'
+s.name         = 'XXRefresh'
+s.version      = '0.0.1'
+s.license      = { :type => 'MIT', :file => 'LICENSE' }
+s.homepage     = 'https://github.com/ShawnCow/XXRefresh'
+s.authors      = {'大黄' => 'rockhxy@gmail.com'}
+s.summary      = '超级牛逼的refresh  xxrefresh'
 
-s.platform     = :ios, '4.3'
-# s.ios.deployment_target = '5.0'
-# s.osx.deployment_target = '10.7'
+s.platform     =  :ios, '7.0'
+s.source       =  {:git => 'https://github.com/ShawnCow/XXRefresh.git', :tag => s.version}
+s.source_files =  'XXRefresh/*.{h,m}','XXRefresh/**/*'
+s.frameworks   =  'Foundation','UIKit'
+
 s.requires_arc = true
 
-s.source_files = 'XXRefresh/*'
-#s.resource     = 'XXRefresh/XXRefresh/Resource/*'
-# s.resources = 'Assets'
-
-# s.ios.exclude_files = 'Classes/osx'
-# s.osx.exclude_files = 'Classes/ios'
-# s.public_header_files = 'Classes/**/*.h'
-s.frameworks = 'Foundation','UIKit'
 end

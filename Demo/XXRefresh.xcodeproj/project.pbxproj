@@ -13,12 +13,12 @@
 		291F03951CE966EF00EB297C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 291F03931CE966EF00EB297C /* Main.storyboard */; };
 		291F03971CE966EF00EB297C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291F03961CE966EF00EB297C /* Assets.xcassets */; };
 		291F039A1CE966EF00EB297C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 291F03981CE966EF00EB297C /* LaunchScreen.storyboard */; };
-		291F03A91CE9691F00EB297C /* UIScrollView+XXRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 291F03A81CE9691F00EB297C /* UIScrollView+XXRefresh.m */; };
 		291F03AC1CE96D0500EB297C /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 291F03AB1CE96D0500EB297C /* ScrollViewController.m */; };
-		291F03B31CE98EAC00EB297C /* _XXScrollViewObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 291F03B21CE98EAC00EB297C /* _XXScrollViewObserver.m */; };
-		29CC609A1CF3054C0095E156 /* XXRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CC60991CF3054C0095E156 /* XXRefreshHeaderView.m */; };
-		29CC61431CF590740095E156 /* XXRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CC61421CF590740095E156 /* XXRefreshFooterView.m */; };
-		29CC616C1CF7E2490095E156 /* xx_refresh_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29CC616B1CF7E2490095E156 /* xx_refresh_arrow@2x.png */; };
+		308306AA1D1A1EF60000C76D /* _XXScrollViewObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 308306A01D1A1EF60000C76D /* _XXScrollViewObserver.m */; };
+		308306AB1D1A1EF60000C76D /* xx_refresh_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 308306A21D1A1EF60000C76D /* xx_refresh_arrow@2x.png */; };
+		308306AC1D1A1EF60000C76D /* UIScrollView+XXRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 308306A41D1A1EF60000C76D /* UIScrollView+XXRefresh.m */; };
+		308306AD1D1A1EF60000C76D /* XXRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 308306A71D1A1EF60000C76D /* XXRefreshFooterView.m */; };
+		308306AE1D1A1EF60000C76D /* XXRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 308306A91D1A1EF60000C76D /* XXRefreshHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,18 +32,18 @@
 		291F03961CE966EF00EB297C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		291F03991CE966EF00EB297C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		291F039B1CE966EF00EB297C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		291F03A71CE9691F00EB297C /* UIScrollView+XXRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+XXRefresh.h"; sourceTree = "<group>"; };
-		291F03A81CE9691F00EB297C /* UIScrollView+XXRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+XXRefresh.m"; sourceTree = "<group>"; };
 		291F03AA1CE96D0500EB297C /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
 		291F03AB1CE96D0500EB297C /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
-		291F03B11CE98EAC00EB297C /* _XXScrollViewObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _XXScrollViewObserver.h; sourceTree = "<group>"; };
-		291F03B21CE98EAC00EB297C /* _XXScrollViewObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _XXScrollViewObserver.m; sourceTree = "<group>"; };
-		291F03B41CE98F1B00EB297C /* XXRefreshDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XXRefreshDefine.h; path = Private/XXRefreshDefine.h; sourceTree = "<group>"; };
-		29CC60981CF3054C0095E156 /* XXRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXRefreshHeaderView.h; sourceTree = "<group>"; };
-		29CC60991CF3054C0095E156 /* XXRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXRefreshHeaderView.m; sourceTree = "<group>"; };
-		29CC61411CF590740095E156 /* XXRefreshFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXRefreshFooterView.h; sourceTree = "<group>"; };
-		29CC61421CF590740095E156 /* XXRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXRefreshFooterView.m; sourceTree = "<group>"; };
-		29CC616B1CF7E2490095E156 /* xx_refresh_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xx_refresh_arrow@2x.png"; sourceTree = "<group>"; };
+		3083069F1D1A1EF60000C76D /* _XXScrollViewObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _XXScrollViewObserver.h; sourceTree = "<group>"; };
+		308306A01D1A1EF60000C76D /* _XXScrollViewObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _XXScrollViewObserver.m; sourceTree = "<group>"; };
+		308306A21D1A1EF60000C76D /* xx_refresh_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xx_refresh_arrow@2x.png"; sourceTree = "<group>"; };
+		308306A31D1A1EF60000C76D /* UIScrollView+XXRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+XXRefresh.h"; sourceTree = "<group>"; };
+		308306A41D1A1EF60000C76D /* UIScrollView+XXRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+XXRefresh.m"; sourceTree = "<group>"; };
+		308306A51D1A1EF60000C76D /* XXRefreshDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXRefreshDefine.h; sourceTree = "<group>"; };
+		308306A61D1A1EF60000C76D /* XXRefreshFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXRefreshFooterView.h; sourceTree = "<group>"; };
+		308306A71D1A1EF60000C76D /* XXRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXRefreshFooterView.m; sourceTree = "<group>"; };
+		308306A81D1A1EF60000C76D /* XXRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXRefreshHeaderView.h; sourceTree = "<group>"; };
+		308306A91D1A1EF60000C76D /* XXRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXRefreshHeaderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +76,7 @@
 		291F03891CE966EF00EB297C /* XXRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				291F03A31CE9670F00EB297C /* XXRefresh */,
+				3083069E1D1A1EF60000C76D /* XXRefresh */,
 				291F038D1CE966EF00EB297C /* AppDelegate.h */,
 				291F038E1CE966EF00EB297C /* AppDelegate.m */,
 				291F03901CE966EF00EB297C /* ViewController.h */,
@@ -100,35 +100,27 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		291F03A31CE9670F00EB297C /* XXRefresh */ = {
+		3083069E1D1A1EF60000C76D /* XXRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				29CC616A1CF7E2490095E156 /* Resource */,
-				291F03B01CE98EAC00EB297C /* Private */,
-				291F03B41CE98F1B00EB297C /* XXRefreshDefine.h */,
-				291F03A71CE9691F00EB297C /* UIScrollView+XXRefresh.h */,
-				291F03A81CE9691F00EB297C /* UIScrollView+XXRefresh.m */,
-				29CC60981CF3054C0095E156 /* XXRefreshHeaderView.h */,
-				29CC60991CF3054C0095E156 /* XXRefreshHeaderView.m */,
-				29CC61411CF590740095E156 /* XXRefreshFooterView.h */,
-				29CC61421CF590740095E156 /* XXRefreshFooterView.m */,
+				3083069F1D1A1EF60000C76D /* _XXScrollViewObserver.h */,
+				308306A01D1A1EF60000C76D /* _XXScrollViewObserver.m */,
+				308306A11D1A1EF60000C76D /* Resource */,
+				308306A31D1A1EF60000C76D /* UIScrollView+XXRefresh.h */,
+				308306A41D1A1EF60000C76D /* UIScrollView+XXRefresh.m */,
+				308306A51D1A1EF60000C76D /* XXRefreshDefine.h */,
+				308306A61D1A1EF60000C76D /* XXRefreshFooterView.h */,
+				308306A71D1A1EF60000C76D /* XXRefreshFooterView.m */,
+				308306A81D1A1EF60000C76D /* XXRefreshHeaderView.h */,
+				308306A91D1A1EF60000C76D /* XXRefreshHeaderView.m */,
 			);
 			path = XXRefresh;
 			sourceTree = "<group>";
 		};
-		291F03B01CE98EAC00EB297C /* Private */ = {
+		308306A11D1A1EF60000C76D /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				291F03B11CE98EAC00EB297C /* _XXScrollViewObserver.h */,
-				291F03B21CE98EAC00EB297C /* _XXScrollViewObserver.m */,
-			);
-			path = Private;
-			sourceTree = "<group>";
-		};
-		29CC616A1CF7E2490095E156 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				29CC616B1CF7E2490095E156 /* xx_refresh_arrow@2x.png */,
+				308306A21D1A1EF60000C76D /* xx_refresh_arrow@2x.png */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -190,7 +182,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29CC616C1CF7E2490095E156 /* xx_refresh_arrow@2x.png in Resources */,
+				308306AB1D1A1EF60000C76D /* xx_refresh_arrow@2x.png in Resources */,
 				291F039A1CE966EF00EB297C /* LaunchScreen.storyboard in Resources */,
 				291F03971CE966EF00EB297C /* Assets.xcassets in Resources */,
 				291F03951CE966EF00EB297C /* Main.storyboard in Resources */,
@@ -204,14 +196,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				308306AA1D1A1EF60000C76D /* _XXScrollViewObserver.m in Sources */,
 				291F03921CE966EF00EB297C /* ViewController.m in Sources */,
 				291F038F1CE966EF00EB297C /* AppDelegate.m in Sources */,
-				291F03A91CE9691F00EB297C /* UIScrollView+XXRefresh.m in Sources */,
-				29CC609A1CF3054C0095E156 /* XXRefreshHeaderView.m in Sources */,
-				29CC61431CF590740095E156 /* XXRefreshFooterView.m in Sources */,
+				308306AE1D1A1EF60000C76D /* XXRefreshHeaderView.m in Sources */,
 				291F03AC1CE96D0500EB297C /* ScrollViewController.m in Sources */,
 				291F038C1CE966EF00EB297C /* main.m in Sources */,
-				291F03B31CE98EAC00EB297C /* _XXScrollViewObserver.m in Sources */,
+				308306AD1D1A1EF60000C76D /* XXRefreshFooterView.m in Sources */,
+				308306AC1D1A1EF60000C76D /* UIScrollView+XXRefresh.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
